@@ -111,7 +111,7 @@ katere podatke naj vsebujejo.
    podrobneje opisana na koncu poglavja.
 
    \item Razred \emph{Skupina} predstavlja skupino študentov. Kot podatke torej potrebujemo
-   smer skupine (npr. pedagoška matematika) ter število študentov v njej. Podobno kot pri
+   smer skupine (npr.pedagoška matematika) ter število študentov v njej. Podobno kot pri
    profesorjih, tudi tukaj potrebujemo tabelo zasedenosti.
 
    \item Razred \emph{Predavalnica} nosi podatke o kapaciteti predavalnice, njeno oznako
@@ -166,8 +166,8 @@ Poglejmo si nekaj omejitev, ki jih urnik ne sme kršiti:
    \item Nobena skupina ne sme imeti več predavanj hkrati.
    \item Nobena predavalnica ne sme biti dodeljena večim predavanjem hkrati.
    \item Predavalnica mora imeti zadostno kapaciteto.
-   \item Predavanja posebne vrste (npr. vaje iz računalništva) se morajo izvajati v ustrezni predavalnici.
-   \item Urnik mora zadoščati zastavljenemu časovnemu okvirju (npr. od sedmih zjutraj do osmih zvečer).
+   \item Predavanja posebne vrste (npr.vaje iz računalništva) se morajo izvajati v ustrezni predavalnici.
+   \item Urnik mora zadoščati zastavljenemu časovnemu okvirju (npr.od sedmih zjutraj do osmih zvečer).
 \end{itemize}
 \noindent
 % Spodnja vrstica ne začne novega odstavka, zato ne bi smela biti zamaknjena.
@@ -178,7 +178,7 @@ krši nobenega izmed zgoraj naštetih načel, a še zdaleč ne ustreza merilom k
 
 Algoritem je najbolje implementirati tako, da do kršenja strogih omejitev sploh ne more priti.
 Tabela zasedenosti je dober primer pametne implementacije, saj tako že v osnovi  preprečujemo
-dodeljevanje t.i. prekrivanj. Če želi algoritem dodeliti predavanje določeni predavalnici,
+dodeljevanje t.i.prekrivanj. Če želi algoritem dodeliti predavanje določeni predavalnici,
 mora najprej v tabeli zasedenosti preveriti, če je v tistem terminu le-ta še na voljo,
 sicer se vstavljanje ne izvede.
 
@@ -233,7 +233,7 @@ sprejet s strani večine, pa bi se povečala.
 
 Kot zanimivost naj omenimo, da se nekateri programerji odločajo tudi za utežitev strogih
 omejitev s to razliko, da so vrednosti teh uteži izjemno velike, zato se bo algoritem
-(skoraj) vedno "odločil", da jih ne bo prekršil. Tak način uteževanja pride v poštev
+(skoraj) vedno ">odločil"<, da jih ne bo prekršil. Tak način uteževanja pride v poštev
 takrat, ko algoritem v osnovi ne zadosti strogim omejitvam urnika.
 
 Ko enkrat ustrezno nastavimo vrednosti uteži, je treba ugotoviti, kako bomo postopali
@@ -249,13 +249,13 @@ Nižja vrednost formule pomeni kakovostnejši urnik, izračunamo pa jo na vsakem
 Korak pri izdelavi urnika predstavlja eno izmed operacij nad njim (označuje njegovo
 spremembo).
 
-V 2. poglavju bomo opisali postopek gradnje urnika, saj bomo podrobneje spoznali
+V 2.poglavju bomo opisali postopek gradnje urnika, saj bomo podrobneje spoznali
 operacije nad urnikom in več vrst optimizacijskih metod, ki jih lahko brez oklevanja
 poimenujemo kar osrčje programa za avtomatizirano izdelavo urnika.
 
 \section{Avtomatizirana izdelava urnika} 
 
-V 1. poglavju smo izvedeli, da ročna izdela urnikov ni tako preprosta, kot bi si
+V 1.poglavju smo izvedeli, da ročna izdela urnikov ni tako preprosta, kot bi si
 na prvi pogled predstavljali. Še večji izziv predstavlja implementacija algoritma, ki da
 (fakultetni) urnik. Obstaja pa velika razlika med prvim in drugim pristopom, saj ko je
 algoritem enkrat dobro napisan, smo se težav z izdelovanjem urnika za vselej rešili.
@@ -406,7 +406,7 @@ korakov, in si šele nato ogledajo njihov natančen opis.
    ustavitveni pogoj je zadovoljivo velika vrednost kriterijske funkcije.
 
    \item Naključno izberemo okolico trenutne rešitve. Z okolico izberemo tudi operacijo,
-   ki jo izvajamo na tem koraku (npr. zamenjava dveh srečanj).
+   ki jo izvajamo na tem koraku (npr.zamenjava dveh srečanj).
 
    \item Če v tem koraku izberemo tisto zamenjavo srečanj, ki izmed vseh možnih najbolj
    poveča vrednost kriterijske funkcije, potem postopamo enako, kot požrešna metoda. Če
@@ -451,7 +451,7 @@ izbiro spremembe preveri, če je vsebovana v seznamu prepovedanih sprememb. Pogl
 je takšno postopanje smiselno.
 
 Naj bo $n = 100$ ter $s_1$ sprememba urnika, ki nas je pripeljala v lokalni maksimum. To
-spremembo (npr. zamenjava $\text{srečanja}_i$ in $\text{srečanja}_j$) sedaj shranimo v
+spremembo (npr.zamenjava $\text{srečanja}_i$ in $\text{srečanja}_j$) sedaj shranimo v
 seznam tabujev. V naslednjem koraku izvedemo spremembo $s_2$, ki se prav tako shrani v
 seznam prepovedanih sprememb. Podobno naredimo za vse spremembe v nadaljnih korakih. S
 tem poskrbimo, da se lahko v isti lokalni maksimum vrnemo šele čez $n = 100$ korakov, saj
@@ -500,7 +500,7 @@ uporabili katero izmed tehnik -- mogoče bi katero izmed teh postopanj dalo celo
 \subsection{Zaključek} 
 
 % V spodnjem odstavku naj bodo črke G, U in I v "Graphical User Interface" podčrtane.
-Sledili smo receptu in s tem izdelali "okusen obrok", treba ga je le še ustrezno postreči
+Sledili smo receptu in s tem izdelali ">okusen obrok"<, treba ga je le še ustrezno postreči
 gostom za mizo. S tem imamo v mislih grafični uporabniški vmesnik (\underline{G}raphical
 \underline{U}ser \underline{I}nterface), ki mora urnik uporabnikom predstaviti na razumljiv in
 pregleden način. Končnega izgleda izdelka nikakor ne smemo zanemariti, saj je ta med uporabniki
